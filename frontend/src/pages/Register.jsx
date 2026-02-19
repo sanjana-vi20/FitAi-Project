@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Dumbbell, Mail, Lock, User, ArrowRight } from "lucide-react";
-import api from '../config/Api';
+import api from '../config/API';
 import toast from "react-hot-toast";
 
 const Register = () => {
@@ -13,6 +13,7 @@ const Register = () => {
   });
 
   const [isLoading , setIsLoading] = useState(false);
+  const [validationError, setValidationError] = useState({});
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -20,17 +21,24 @@ const Register = () => {
   };
 
   const handleClear = () => {
-    setFormData("");
+   setFormData({
+    fullName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    role: "user",
+  });
+  setValidationError({});
   };
 
   const validate = () => {
-    let Error = {};
+    let Errors = {};
 
     if (formData.fullName.length < 3) {
-      Error.fullName = "Name should be More Than 3 Characters";
+      Errors.fullName = "Name should be More Than 3 Characters";
     } else {
       if (!/^[A-Za-z ]+$/.test(formData.fullName)) {
-        Error.fullName = "Only Contain A-Z , a-z and space";
+        Errors.fullName = "Only Contain A-Z , a-z and space";
       }
     }
 
@@ -39,11 +47,11 @@ const Register = () => {
         formData.email,
       )
     ) {
-      Error.email = "Use Proper Email Format";
+      Errors.email = "Use Proper Email Format";
     }
-    setValidationError(Error);
+    setValidationError(Errors);
 
-    return Object.keys(Error).length > 0 ? false : true;
+    return Object.keys(Errors).length > 0 ? false : true;
   };
 
   const handleSubmit = async (e) => {
@@ -65,7 +73,7 @@ const Register = () => {
     try {
       // console.log(formData);
       const res = await api.post("/auth/register", formData);
-      toast.success(res.data.message);
+      toast.success(res?.data?.message);
       handleClear();
     } catch (error) {
       console.log(error);
@@ -170,9 +178,10 @@ const Register = () => {
                   type="password"
                   className="w-full bg-bgMain border border-slate-700 rounded-lg py-2.5 pl-10 pr-4 text-textMain focus:outline-none focus:border-brand transition-colors"
                   placeholder="••••••••"
+                  name="password"
                   value={formData.password}
                   onChange={handleChange}
-                  name="password"
+                  
                 />
               </div>
             </div>
