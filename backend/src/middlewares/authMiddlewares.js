@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken";
 
 export const protect = async (req, res, next) => {
   try {
+    // console.log("req : " , req);
+    
     const biscuit = req.cookies.fitAI;
     console.log("Token Recieved from cookies : ", biscuit);
 
