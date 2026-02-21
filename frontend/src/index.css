@@ -46,6 +46,10 @@ body {
   background: var(--color-brand);
 }
 
+[data-aos="zoom-out-up"] {
+  box-shadow: 0 0 50px -12px rgba(163, 230, 53, 0.2);
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
