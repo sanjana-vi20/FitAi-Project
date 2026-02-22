@@ -4,6 +4,8 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./src/config/db.js";
 import AuthRouter from "./src/routes/authRoutes.js";
+import AdminRouter from "./src/routes/adminRoutes.js";
+import UserRouter from "./src/routes/userRoutes.js";
 import cookieParser from "cookie-parser";
 
 const app = express();
@@ -20,6 +22,8 @@ app.use(express.json());
 
 // routes
 app.use("/auth", AuthRouter);
+app.use("/user", UserRouter);
+app.use("/admin", AdminRouter);
 
 const PORT = process.env.PORT || 3000;
 
