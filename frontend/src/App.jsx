@@ -17,14 +17,12 @@ function App() {
       <BrowserRouter>
       <Toaster/>
       <Header/>
-      <main className="pt-20">
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/user-dashboard' element={<UserDashboard/>}/>
       </Routes>
-      </main>
       </BrowserRouter>
     </>
   )

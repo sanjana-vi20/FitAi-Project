@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 
 export const genToken = async (user, res) => {
-  console.log("res : " , res);
+  // console.log("res : " , res);
   
   try {
     const payload = {
@@ -13,7 +13,6 @@ export const genToken = async (user, res) => {
       // 1d, 1h, '' forever,
       });
       // console.log("token : " , token);
-      
 
 
     res.cookie("fitAI", token, {
