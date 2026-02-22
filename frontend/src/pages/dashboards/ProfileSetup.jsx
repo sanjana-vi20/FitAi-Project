@@ -18,7 +18,7 @@ const ProfileSetup = ({ onComplete }) => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     age: "",
-    gender: "", // 1 for Male, 2 for Female/Other (as per Number type in schema)
+    gender: "",
     height: "",
     weight: "",
     activityLevel: "moderate",
@@ -30,6 +30,7 @@ const ProfileSetup = ({ onComplete }) => {
       weight: "",
     },
   });
+  
   const navigate = useNavigate();
   const [loading , setLoading] = useState(false);
   const [excersise , setExcersise] = useState();
