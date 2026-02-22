@@ -6,7 +6,7 @@ const ProfileSetup = ({ onComplete }) => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     age: '',
-    gender: 'male',
+    gender: '',
     weight: '',
     height: '',
     activityLevel: 'moderate',
@@ -27,7 +27,7 @@ const ProfileSetup = ({ onComplete }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[150] flex items-center justify-center p-4 bg-[#05080a]/90 backdrop-blur-xl">
+    <div className="fixed inset-0 z-150 flex items-center justify-center p-4 bg-[#05080a]/90 backdrop-blur-xl">
       <div 
         data-aos="zoom-in" 
         className="w-full max-w-xl bg-slate-900 border border-slate-800 rounded-[3rem] p-8 md:p-12 relative overflow-hidden shadow-2xl"

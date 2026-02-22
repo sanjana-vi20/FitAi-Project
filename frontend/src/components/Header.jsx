@@ -92,7 +92,7 @@ const Header = () => {
             <X size={28} className="text-slate-400 cursor-pointer" onClick={() => setIsOpen(false)} />
           </div>
           
-          <div className="flex flex-col space-y-6 flex-grow">
+          <div className="flex flex-col space-y-6 grow">
             {navLinks.map((link) => (
               <a 
                 key={link.name}
