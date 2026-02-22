@@ -16,7 +16,7 @@ export const userRegister = async (req, res, next) => {
       weight,
       activityLevel,
       experienceLevel,
-      goal,
+      activities,
       targetCalories,
     } = req.body;
 
@@ -32,7 +32,7 @@ export const userRegister = async (req, res, next) => {
       !weight ||
       !activityLevel ||
       !experienceLevel ||
-      !goal ||
+      !activities ||
       !targetCalories
     ) {
       const error = new Error("All Fields Required");
@@ -58,7 +58,7 @@ export const userRegister = async (req, res, next) => {
       weight,
       activityLevel,
       experienceLevel,
-      goal,
+      activities,
       bmi:bodyMassIndex,
       targetCalories,
     });

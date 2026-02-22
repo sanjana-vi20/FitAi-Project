@@ -93,17 +93,17 @@ const userSchema = mongoose.Schema(
     target: {
       height: {
         type: Number,
-        required() {
-          return this.activities === "height-gain";
+        required: function () {
+          return this.parent().activities === "height-gain";
         },
         default: 0,
       },
       weight: {
         type: Number,
-        required() {
+        required: function () {
           return (
-            this.activities === "weight-gain" ||
-            this.activities === "weight-loss"
+            this.parent().activities === "weight-gain" ||
+            this.parent().activities === "weight-loss"
           );
         },
         default: 0,
