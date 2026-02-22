@@ -32,12 +32,11 @@ const profile = mongoose.Schema({
     type: String,
     enum: ["beginner", "intermediate", "N/A"],
     required: true,
+    default:"N/A"
   },
   activities: {
     type: String,
     enum: [
-      "weight-loss",
-      "muscle-gain",
       "weight-loss",
       "muscle-gain",
       "height-gain",
@@ -86,3 +85,7 @@ const profile = mongoose.Schema({
     },
   },
 });
+
+const Profile = mongoose.model("Profile", profile)
+
+export default Profile;
