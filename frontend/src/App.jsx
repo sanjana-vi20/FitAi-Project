@@ -16,6 +16,7 @@ function App() {
     <>
       <BrowserRouter>
       <Toaster/>
+      <div className="bg-slate-950">
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -23,6 +24,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/user-dashboard' element={<UserDashboard/>}/>
       </Routes>
+      </div>
       </BrowserRouter>
     </>
   )
