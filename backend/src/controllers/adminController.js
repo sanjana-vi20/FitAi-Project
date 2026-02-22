@@ -17,11 +17,11 @@ export const postExercises = async (req, res, next) => {
       !experienceLevel ||
       !activityLevel
     ) {
-      if (!goalOne || !exLevel || !actLevel) {
+      
         const error = new Error("All Fields Required");
         error.statusCode = 400;
         return next(error);
-      }
+      
     }
 
     const newExercise = await Exercise.create({
