@@ -9,8 +9,9 @@ const ProfileSetup = ({ onComplete }) => {
     gender: '',
     weight: '',
     height: '',
-    activityLevel: 'moderate',
-    goal: 'weight-loss'
+    activityLevel: '',
+    goal: '',
+    
   });
 
   useEffect(() => {

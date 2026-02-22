@@ -2,6 +2,11 @@ import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
   {
+    // referenceDiet: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "Diet",
+    //   required: true,
+    // },
     fullName: {
       type: String,
       required: true,
@@ -27,7 +32,6 @@ const userSchema = mongoose.Schema(
     },
 
     //profile
-
     age: {
       type: String,
       required: true,
@@ -44,40 +48,66 @@ const userSchema = mongoose.Schema(
       required: true,
       default: "N/A",
     },
-    width: {
+    weight: {
       type: String,
       required: true,
       default: "N/A",
     },
     activityLevel: {
       type: String,
+      enum: ["light", "moderate", "extreme", "N/A"],
       required: true,
       default: "N/A",
     },
     experienceLevel: {
       type: String,
+      enum: ["beginner", "intermediate", "N/A"],
       required: true,
       default: "N/A",
     },
-    goal: {
+    activities: {
       type: String,
+      enum: [
+        "weight-loss",
+        "muscle-gain",
+        "height-gain",
+        "weight-gain",
+        "stay-fit",
+      ],
+      default: "stay-fit",
       required: true,
-      default: "N/A",
     },
     bmi: {
       type: String,
-      required: true,
       default: "N/A",
     },
     maintenanceCalories: {
       type: String,
-      required: true,
       default: "N/A",
     },
     targetCalories: {
       type: String,
       required: true,
       default: "N/A",
+    },
+    target: {
+      height: {
+        type: Number,
+        required() {
+          return this.activities === "height-gain";
+        },
+        default: 0,
+      },
+      weight: {
+        type: Number,
+        required() {
+          return (
+            this.activities === "weight-gain" ||
+            this.activities === "weight-loss"
+          );
+        },
+        default: 0,
+      },
     },
   },
   { timestamps: true },

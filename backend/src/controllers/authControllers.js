@@ -4,43 +4,67 @@ import { genToken } from "../util/authToken.js";
 
 export const userRegister = async (req, res, next) => {
   try {
-    const { fullName, email, password, role } = req.body;
+      const {
+      fullName,
+      email,
+      password,
+      role,
+      isActive,
+      age,
+      gender,
+      height,
+      weight,
+      activityLevel,
+      experienceLevel,
+      goal,
+      targetCalories,
+    } = req.body;
 
-    if (!fullName || !email || !role || !password) {
+    if (
+      !fullName ||
+      !email ||
+      !password ||
+      !role ||
+      !isActive ||
+      !age ||
+      !gender ||
+      !height ||
+      !weight ||
+      !activityLevel ||
+      !experienceLevel ||
+      !goal ||
+      !targetCalories
+    ) {
       const error = new Error("All Fields Required");
       error.statusCode = 400;
       return next(error);
     }
 
-    const existingUser = await User.findOne({ email });
-
-    if (existingUser) {
-      const error = new Error("Email Already Registered");
-      error.statusCode = 409;
-      return next(error);
-    }
-
-    //encrypting the password
-
     const salt = await bcrypt.genSalt(10);
 
-    const hashedpassword = await bcrypt.hash(password, salt);
+    const hashedPassword = await bcrypt.hash(password, salt);
 
-    const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
-    const photo = {
-      url: photoUrl,
-    };
-    const newUser = await User.create({
+    const bodyMassIndex = (weight / height) * height * 0.0001;
+
+    const profileUpdated = await User.create({
       fullName,
       email,
-      password: hashedpassword,
+      password:hashedPassword,
       role,
-      photo,
+      isActive:true,
+      age,
+      gender,
+      height,
+      weight,
+      activityLevel,
+      experienceLevel,
+      goal,
+      bmi:bodyMassIndex,
+      targetCalories,
     });
 
-    console.log(newUser);
-
-    res.status(201).json({ message: "User Registered Successfully" });
+    res.status(200).json({ message: "Profile Created Successfully"});
+    
   } catch (error) {
     console.log(error);
     next(error);
