@@ -18,7 +18,7 @@ export const protect = async (req, res, next) => {
       return next(error);
     }
 
-    const verifiedUser = await User.findById(tea.id);
+    const verifiedUser = await User.findById(tea.id).populate("profile");
 
     if (!verifiedUser) {
       const error = new Error("Unauthorized User! Please login again...");

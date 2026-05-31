@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 
 const exerciseSchema = mongoose.Schema({
+  date:{
+    type:Date,
+    required:true
+  },
   exerciseName: {
     type: String,
     required: true,
@@ -20,6 +24,15 @@ const exerciseSchema = mongoose.Schema({
   activityLevel: {
     type: [String],
     required: true,
+  },
+  duration: {
+    type: Number,
+  },
+  reps: {
+    type: String,
+  },
+  sets: {
+    type: Number,
   },
 });
 

@@ -1,0 +1,1002 @@
+[
+  {
+    "exerciseName": "Brisk Walking",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 1500
+  },
+  {
+    "exerciseName": "Jumping Jacks",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "30-50 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Mountain Climbers",
+    "type": "Core/Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate", "extreme"],
+    "sets": 3,
+    "reps": "40 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Burpees",
+    "type": "HIIT",
+    "activities": ["weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 4,
+    "reps": "12-15 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "High Knees",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Jump Rope",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate", "extreme"],
+    "sets": 4,
+    "reps": "80-100 jumps",
+    "duration": 120
+  },
+  {
+    "exerciseName": "Battle Ropes",
+    "type": "HIIT",
+    "activities": ["weight-loss", "muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 4,
+    "reps": "N/A",
+    "duration": 30
+  },
+  {
+    "exerciseName": "Box Jumps",
+    "type": "Plyometrics",
+    "activities": ["weight-loss", "muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "10 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Sprints",
+    "type": "Cardio",
+    "activities": ["weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 5,
+    "reps": "100 meters",
+    "duration": 20
+  },
+  {
+    "exerciseName": "Stationary Bike",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 1200
+  },
+  {
+    "exerciseName": "Elliptical Trainer",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 1200
+  },
+  {
+    "exerciseName": "Butt Kicks",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Step-ups",
+    "type": "Strength/Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "15 reps per leg",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Bear Crawls",
+    "type": "Full Body",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "20 meters",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Plank Jacks",
+    "type": "Core/Cardio",
+    "activities": ["weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "25 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Shadow Boxing",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 180
+  },
+  {
+    "exerciseName": "Kettlebell Swings",
+    "type": "Power",
+    "activities": ["weight-loss", "muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 4,
+    "reps": "20 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Skater Jumps",
+    "type": "Plyometrics",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12 reps per side",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Stair Climbing",
+    "type": "Cardio",
+    "activities": ["weight-loss", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate", "extreme"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 720
+  },
+  {
+    "exerciseName": "Tuck Jumps",
+    "type": "Plyometrics",
+    "activities": ["weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "10 reps",
+    "duration": 30
+  },
+  {
+    "exerciseName": "Push-ups",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit", "weight-loss"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Barbell Squats",
+    "type": "Compound",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 4,
+    "reps": "10 reps",
+    "duration": 50
+  },
+  {
+    "exerciseName": "Deadlift",
+    "type": "Compound",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "8 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Bench Press",
+    "type": "Strength",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate", "extreme"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Overhead Press",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "10 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Dumbbell Bicep Curls",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "12-15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Hammer Curls",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "12-15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Tricep Dips",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12-15 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Pull-ups",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit", "height-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "Max reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Lat Pulldowns",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit", "weight-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Bent-over Rows",
+    "type": "Strength",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Leg Press",
+    "type": "Strength",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 50
+  },
+  {
+    "exerciseName": "Lunges",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "12 reps per leg",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Bulgarian Split Squats",
+    "type": "Strength",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "10 reps per leg",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Dumbbell Flyes",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Lateral Raises",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Front Raises",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Farmer’s Walk",
+    "type": "Full Body",
+    "activities": ["muscle-gain", "weight-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Weighted Pull-ups",
+    "type": "Strength",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "8 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Clean and Press",
+    "type": "Power",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "8 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Snatch",
+    "type": "Power",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 4,
+    "reps": "6 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Leg Extensions",
+    "type": "Isolation",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Hamstring Curls",
+    "type": "Isolation",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Calf Raises",
+    "type": "Isolation",
+    "activities": ["muscle-gain", "weight-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 4,
+    "reps": "20 reps",
+    "duration": 50
+  },
+  {
+    "exerciseName": "Face Pulls",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "20 reps",
+    "duration": 50
+  },
+  {
+    "exerciseName": "Arnold Press",
+    "type": "Strength",
+    "activities": ["muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "10 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Skull Crushers",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Preacher Curls",
+    "type": "Hypertrophy",
+    "activities": ["muscle-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "T-Bar Rows",
+    "type": "Strength",
+    "activities": ["muscle-gain", "weight-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "10 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Chest Dips",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Cobra Stretch",
+    "type": "Flexibility",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Bar Hanging",
+    "type": "Stretching",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Pelvic Tilt",
+    "type": "Stretching",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Bridge Pose",
+    "type": "Yoga",
+    "activities": ["height-gain", "stay-fit", "muscle-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Cat-Cow Stretch",
+    "type": "Flexibility",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 2,
+    "reps": "12 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Forward Fold",
+    "type": "Flexibility",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Triangle Pose",
+    "type": "Yoga",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 2,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Sun Salutation",
+    "type": "Yoga",
+    "activities": ["height-gain", "stay-fit", "weight-loss"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate", "extreme"],
+    "sets": 5,
+    "reps": "N/A",
+    "duration": 720
+  },
+  {
+    "exerciseName": "Toe Touches",
+    "type": "Stretching",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "20 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Downward Dog",
+    "type": "Yoga",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Child’s Pose",
+    "type": "Flexibility",
+    "activities": ["stay-fit", "height-gain"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 120
+  },
+  {
+    "exerciseName": "Puppy Pose",
+    "type": "Flexibility",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 2,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Bird-Dog Stretch",
+    "type": "Core/Flexibility",
+    "activities": ["stay-fit", "height-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "12 reps per side",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Wheel Pose",
+    "type": "Yoga",
+    "activities": ["height-gain", "muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 30
+  },
+  {
+    "exerciseName": "Pigeon Pose",
+    "type": "Flexibility",
+    "activities": ["stay-fit", "height-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 2,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Warrior Pose I",
+    "type": "Yoga",
+    "activities": ["stay-fit", "height-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Warrior Pose II",
+    "type": "Yoga",
+    "activities": ["stay-fit", "height-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Supermans",
+    "type": "Core/Stretching",
+    "activities": ["height-gain", "stay-fit"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Inversion Hanging",
+    "type": "Stretching",
+    "activities": ["height-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 2,
+    "reps": "N/A",
+    "duration": 180
+  },
+  {
+    "exerciseName": "Butterfly Stretch",
+    "type": "Flexibility",
+    "activities": ["stay-fit", "height-gain"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 2,
+    "reps": "N/A",
+    "duration": 120
+  },
+  {
+    "exerciseName": "Plank",
+    "type": "Core",
+    "activities": ["stay-fit", "muscle-gain", "weight-loss"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Side Plank",
+    "type": "Core",
+    "activities": ["stay-fit", "muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Russian Twists",
+    "type": "Core",
+    "activities": ["stay-fit", "weight-loss"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "30 reps total",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Bicycle Crunches",
+    "type": "Core",
+    "activities": ["stay-fit", "weight-loss"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "25 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Leg Raises",
+    "type": "Core",
+    "activities": ["stay-fit", "muscle-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Flutter Kicks",
+    "type": "Core",
+    "activities": ["stay-fit", "weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Dead Bug",
+    "type": "Core",
+    "activities": ["stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 3,
+    "reps": "12 reps per side",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Hollow Body Hold",
+    "type": "Core",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "V-Ups",
+    "type": "Core",
+    "activities": ["muscle-gain", "weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "15 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Ab Wheel Rollouts",
+    "type": "Core",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Toe Touches (Abs)",
+    "type": "Core",
+    "activities": ["stay-fit", "weight-loss"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "20 reps",
+    "duration": 40
+  },
+  {
+    "exerciseName": "Glute Bridges",
+    "type": "Strength/Core",
+    "activities": ["stay-fit", "muscle-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "20 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Swimming",
+    "type": "Cardio",
+    "activities": ["stay-fit", "weight-loss", "muscle-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate", "extreme"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 1800
+  },
+  {
+    "exerciseName": "Yoga Basics",
+    "type": "Yoga",
+    "activities": ["stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 1800
+  },
+  {
+    "exerciseName": "Slow Jogging",
+    "type": "Cardio",
+    "activities": ["stay-fit", "weight-loss"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["moderate"],
+    "sets": 1,
+    "reps": "N/A",
+    "duration": 1200
+  },
+  {
+    "exerciseName": "Air Squats",
+    "type": "Strength",
+    "activities": ["stay-fit", "weight-loss"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light", "moderate"],
+    "sets": 3,
+    "reps": "25 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Arm Circles",
+    "type": "Mobility",
+    "activities": ["stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 2,
+    "reps": "30 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Hip Circles",
+    "type": "Mobility",
+    "activities": ["stay-fit"],
+    "experienceLevel": ["beginner"],
+    "activityLevel": ["light"],
+    "sets": 2,
+    "reps": "20 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Wall Sit",
+    "type": "Strength",
+    "activities": ["stay-fit", "muscle-gain"],
+    "experienceLevel": ["beginner", "intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "N/A",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Lunges with Twist",
+    "type": "Mobility/Strength",
+    "activities": ["stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "14 reps total",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Muscle-ups",
+    "type": "Power",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "5-8 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Pistol Squats",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "8 reps per leg",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Handstand Push-ups",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "10 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Thrusters",
+    "type": "Full Body",
+    "activities": ["muscle-gain", "weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 4,
+    "reps": "15 reps",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Plyo Push-ups",
+    "type": "Power",
+    "activities": ["muscle-gain", "weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "12 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Renegade Rows",
+    "type": "Core/Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "12 reps per side",
+    "duration": 60
+  },
+  {
+    "exerciseName": "Turkish Get-up",
+    "type": "Full Body",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "6 reps per side",
+    "duration": 180
+  },
+  {
+    "exerciseName": "Box Sprints",
+    "type": "HIIT",
+    "activities": ["weight-loss"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 5,
+    "reps": "N/A",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Z-Press",
+    "type": "Strength",
+    "activities": ["muscle-gain"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["extreme"],
+    "sets": 3,
+    "reps": "10 reps",
+    "duration": 45
+  },
+  {
+    "exerciseName": "Landmine Presses",
+    "type": "Strength",
+    "activities": ["muscle-gain", "stay-fit"],
+    "experienceLevel": ["intermediate"],
+    "activityLevel": ["moderate"],
+    "sets": 3,
+    "reps": "12 reps per side",
+    "duration": 60
+  }
+]

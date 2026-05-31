@@ -3,11 +3,13 @@ import { createContext, useContext, useEffect, useState } from "react";
 const AuthContext = createContext();
 
 export const AuthProvider = (props) => {
-  const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("FitAIUser")) || "");
+  const [user, setUser] = useState(
+    JSON.parse(sessionStorage.getItem("FitAIUser")) || "",
+  );
 
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(!!user);
 
-  const[role, setRole] = useState(user?.role||"");
+  const [role, setRole] = useState(user?.role || "");
 
   useEffect(() => {
     setIsLogin(!!user);
@@ -23,4 +25,6 @@ export const AuthProvider = (props) => {
 
 //permission granted
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+  return useContext(AuthContext);
+};

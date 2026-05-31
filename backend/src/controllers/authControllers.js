@@ -4,67 +4,43 @@ import { genToken } from "../util/authToken.js";
 
 export const userRegister = async (req, res, next) => {
   try {
-      const {
-      fullName,
-      email,
-      password,
-      role,
-      isActive,
-      age,
-      gender,
-      height,
-      weight,
-      activityLevel,
-      experienceLevel,
-      activities,
-      targetCalories,
-    } = req.body;
+    const { fullName, email, password, role } = req.body;
 
-    if (
-      !fullName ||
-      !email ||
-      !password ||
-      !role ||
-      !isActive ||
-      !age ||
-      !gender ||
-      !height ||
-      !weight ||
-      !activityLevel ||
-      !experienceLevel ||
-      !activities ||
-      !targetCalories
-    ) {
+    if (!fullName || !email || !role || !password) {
       const error = new Error("All Fields Required");
       error.statusCode = 400;
       return next(error);
     }
 
+    const existingUser = await User.findOne({ email });
+
+    if (existingUser) {
+      const error = new Error("Email Already Registered");
+      error.statusCode = 409;
+      return next(error);
+    }
+
+    //encrypting the password
+
     const salt = await bcrypt.genSalt(10);
 
-    const hashedPassword = await bcrypt.hash(password, salt);
+    const hashedpassword = await bcrypt.hash(password, salt);
 
-    const bodyMassIndex = (weight / height) * height * 0.0001;
-
-    const profileUpdated = await User.create({
+    const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
+    const photo = {
+      url: photoUrl,
+    };
+    const newUser = await User.create({
       fullName,
       email,
-      password:hashedPassword,
+      password: hashedpassword,
       role,
-      isActive:true,
-      age,
-      gender,
-      height,
-      weight,
-      activityLevel,
-      experienceLevel,
-      activities,
-      bmi:bodyMassIndex,
-      targetCalories,
+      photo,
     });
 
-    res.status(200).json({ message: "Profile Created Successfully"});
-    
+    console.log(newUser);
+
+    res.status(201).json({ message: "User Registered Successfully" });
   } catch (error) {
     console.log(error);
     next(error);
@@ -81,8 +57,8 @@ export const userLogin = async (req, res, next) => {
       return next(error);
     }
 
-    const existingUser = await User.findOne({ email });
-
+    const existingUser = await User.findOne({ email }).populate("profile").populate("diet");
+    
     if (!existingUser) {
       const error = new Error("Email Not Registered");
       error.statusCode = 402;
@@ -104,6 +80,15 @@ export const userLogin = async (req, res, next) => {
     res
       .status(200)
       .json({ message: "User Login successful", data: existingUser });
+  } catch (error) {
+    next(error);
+  }
+};
+
+
+export const userLogout = async (req, res, next) => {
+  try {
+    res.status(200).clearCookie("fitAI").json({ message: "Logout Successful" });
   } catch (error) {
     next(error);
   }

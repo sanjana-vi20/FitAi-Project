@@ -54,9 +54,9 @@ const Register = () => {
     }
 
     try {
-      const res = await api.post("/auth/register", formData);
+      const res = await api.post(import.meta.env.VITE_SIGNUP, formData);
       toast.success("Identity Created. Redirecting...");
-      setTimeout(() => navigate('/login'), 2000);
+      setTimeout(() => navigate('/login'), 1000);
     } catch (error) {
       toast.error(error?.response?.data?.message || "Registration Failed");
     } finally {
@@ -68,8 +68,8 @@ const Register = () => {
     <div className="min-h-screen bg-[#05080a] flex items-center justify-center p-6 relative overflow-hidden font-sans">
       
       {/* Background Tech Glows */}
-      <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-lime-500/10 blur-[120px] rounded-full" />
+      <div className="absolute top-[-10%] right-[-10%] w-125 h-125 bg-blue-500/10 blur-[120px] rounded-full" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-125 h-125 bg-lime-500/10 blur-[120px] rounded-full" />
 
       {/* Main Registration Card */}
       <div 
@@ -78,7 +78,7 @@ const Register = () => {
       >
         
         {/* Left Branding Strip (Slim) */}
-        <div className="md:w-1/3 bg-gradient-to-b from-lime-400 to-emerald-600 p-8 flex flex-col justify-between text-black">
+        <div className="md:w-1/3 bg-linear-to-b from-lime-400 to-emerald-600 p-8 flex flex-col justify-between text-black">
           <div className="z-10">
             <div className="bg-black p-2 rounded-xl inline-block mb-6 shadow-lg">
               <Dumbbell size={24} className="text-lime-400" />

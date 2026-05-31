@@ -11,10 +11,16 @@ import {
   Check,
 } from "lucide-react";
 import AOS from "aos";
-import api from '../../config/API'
+import api from "../../config/API";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+import { useAuth } from "../../config/AuthContext";
 
 const ProfileSetup = ({ onComplete }) => {
+  const { user, setUser } = useAuth();
+
+  // console.log("user : " , user);
+
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     age: "",
@@ -30,16 +36,37 @@ const ProfileSetup = ({ onComplete }) => {
       weight: "",
     },
   });
-  
+
   const navigate = useNavigate();
-  const [loading , setLoading] = useState(false);
-  const [excersise , setExcersise] = useState();
+  const [loading, setLoading] = useState(false);
+  const [excersise, setExcersise] = useState();
 
   useEffect(() => {
     AOS.init({ duration: 600 });
   }, []);
 
-  const nextStep = () => setStep((s) => s + 1);
+  const nextStep = () => {
+    const {
+      age,
+      gender,
+      height,
+      weight,
+      activityLevel,
+      experienceLevel,
+      activities,
+    } = formData;
+
+    if (step === 1 && (!age || !gender || !height || !weight)) {
+      return toast.error("Please fill all physical stats");
+    }
+    if (step === 2 && (!activityLevel || !experienceLevel)) {
+      return toast.error("Please select activity and experience levels");
+    }
+    if (step === 3 && !activities) {
+      return toast.error("Please select your primary mission");
+    }
+    setStep((s) => s + 1);
+  };
   const prevStep = () => setStep((s) => s - 1);
 
   const handleChange = (e) => {
@@ -52,18 +79,26 @@ const ProfileSetup = ({ onComplete }) => {
 
   const handleSubmit = async () => {
     console.log("formData : ", formData);
-    setLoading(true)
+    setLoading(true);
+
+    if (formData.gender === "") return;
 
     try {
-      const res = await api.post("/")
-      
+      const res = await api.put(`${import.meta.env.VITE_USER_PROFILE_P}/${user._id}`, formData);
+      console.log(res?.data?.data);
+      console.log(res?.data?.data);
+
+      toast.success(res?.data?.message);
+
+      setUser(res?.data?.data);
+
+      navigate('/workout')
     } catch (error) {
-      
+      toast.error(error?.response?.data?.message || "Unknown error");
     }
 
-
     onComplete();
-    navigate('/user-dashboard')
+    navigate("/profile");
   };
 
   return (
@@ -116,8 +151,9 @@ const ProfileSetup = ({ onComplete }) => {
                   onChange={handleChange}
                   className="w-full bg-slate-950 border border-slate-800 rounded-2xl py-4 px-6 text-white focus:border-lime-400/50 outline-none appearance-none"
                 >
-                  <option value={'male'}>Male</option>
-                  <option value={'female'}>Female</option>
+                  <option value="">--Select Gender--</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
                 </select>
               </div>
               <div className="space-y-2 text-left">
@@ -167,7 +203,7 @@ const ProfileSetup = ({ onComplete }) => {
                 <div className="grid grid-cols-3 gap-3">
                   {["light", "moderate", "extreme"].map((level) => (
                     <button
-                    required
+                      required
                       key={level}
                       onClick={() =>
                         handleChange({
@@ -363,11 +399,7 @@ const ProfileSetup = ({ onComplete }) => {
           )}
 
           <button
-            onClick={
-              step === 4
-                ? handleSubmit
-                : nextStep
-            } // Aapka handleSubmit yahan aayega
+            onClick={step === 4 ? handleSubmit : nextStep} // Aapka handleSubmit yahan aayega
             className="flex-1 px-8 py-4 rounded-2xl bg-lime-400 text-black font-black uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all shadow-[0_10px_30px_rgba(163,230,53,0.3)]"
           >
             {step === 4 ? "Finalize Profile" : "Confirm & Continue"}

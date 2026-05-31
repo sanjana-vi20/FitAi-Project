@@ -6,6 +6,9 @@ import connectDB from "./src/config/db.js";
 import AuthRouter from "./src/routes/authRoutes.js";
 import AdminRouter from "./src/routes/adminRoutes.js";
 import UserRouter from "./src/routes/userRoutes.js";
+import ServiceRouter from "./src/routes/serviceRoutes.js";
+import PublicRouter from "./src/routes/publicRoutes.js";
+// import ServiceRouter from "./src/routes/serviceRoutes.js";
 import cookieParser from "cookie-parser";
 
 const app = express();
@@ -24,6 +27,8 @@ app.use(express.json());
 app.use("/auth", AuthRouter);
 app.use("/user", UserRouter);
 app.use("/admin", AdminRouter);
+app.use("/public", PublicRouter);
+app.use("/service", ServiceRouter);
 
 const PORT = process.env.PORT || 3000;
 

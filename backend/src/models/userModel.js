@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
   {
-    // referenceDiet: {
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: "Diet",
-    //   required: true,
-    // },
+    referenceDiet: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Diet",
+      // required: true,
+    },
     fullName: {
       type: String,
       required: true,
@@ -30,88 +30,35 @@ const userSchema = mongoose.Schema(
       type: Boolean,
       default: true,
     },
-
+    photo: {
+      url: {
+        type: String,
+      },
+      publicID: {
+        type: String,
+      },
+    },
     //profile
-    age: {
-      type: String,
-      required: true,
-      default: "N/A",
-    },
-    gender: {
-      type: String,
-      enum: ["male", "female", "others", "N/A"],
-      required: true,
-      default: "N/A",
-    },
-    height: {
-      type: String,
-      required: true,
-      default: "N/A",
-    },
-    weight: {
-      type: String,
-      required: true,
-      default: "N/A",
-    },
-    activityLevel: {
-      type: String,
-      enum: ["light", "moderate", "extreme", "N/A"],
-      required: true,
-      default: "N/A",
-    },
-    experienceLevel: {
-      type: String,
-      enum: ["beginner", "intermediate", "N/A"],
-      required: true,
-      default: "N/A",
-    },
-    activities: {
-      type: String,
-      enum: [
-        "weight-loss",
-        "muscle-gain",
-        "height-gain",
-        "weight-gain",
-        "stay-fit",
-      ],
-      default: "stay-fit",
-      required: true,
-    },
-    bmi: {
-      type: String,
-      default: "N/A",
-    },
-    maintenanceCalories: {
-      type: String,
-      default: "N/A",
-    },
-    targetCalories: {
-      type: String,
-      required: true,
-      default: "N/A",
-    },
-    target: {
-      height: {
-        type: Number,
-        required: function () {
-          return this.parent().activities === "height-gain";
-        },
-        default: 0,
-      },
-      weight: {
-        type: Number,
-        required: function () {
-          return (
-            this.parent().activities === "weight-gain" ||
-            this.parent().activities === "weight-loss"
-          );
-        },
-        default: 0,
-      },
-    },
   },
-  { timestamps: true },
+  {
+    timestamps: true,
+    toJSON: { virtuals: true }, // jb data laao to virtuals ko bhi lekr aana
+    toObject: { virtuals: true },
+  },
 );
+
+// virtual populate
+userSchema.virtual("profile", {
+  ref: "Profile",
+  localField: "_id",
+  foreignField: "referenceUser",
+});
+
+userSchema.virtual("diet", {
+  ref: "Diet",
+  localField: "_id",
+  foreignField: "referenceUser",
+});
 
 const User = mongoose.model("User", userSchema);
 

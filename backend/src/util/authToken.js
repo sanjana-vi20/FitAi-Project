@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 
 export const genToken = async (user, res) => {
-  // console.log("res : " , res);
   
   try {
     const payload = {
@@ -12,8 +11,6 @@ export const genToken = async (user, res) => {
       expiresIn: "1d",
       // 1d, 1h, '' forever,
       });
-      // console.log("token : " , token);
-
 
     res.cookie("fitAI", token, {
       maxAge: 1000 * 60 * 60 * 24,
@@ -21,6 +18,7 @@ export const genToken = async (user, res) => {
       secure: false,
       sameSite: "lax",
     });
+    
   } catch (error) {
     throw error;
   }
