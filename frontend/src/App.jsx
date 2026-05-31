@@ -15,6 +15,7 @@ import Community from './pages/Community'
 import Workoutss from './pages/Workoutss'
 import DietPlan from './pages/DietPlanPage'
 import ProfileSetup from './pages/dashboards/ProfileSetup'
+import DietarySetup from './pages/DietarySetup'
 
 function App() {
 
